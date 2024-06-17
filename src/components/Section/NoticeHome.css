@@ -1,0 +1,9 @@
+.color-footer {
+  background: linear-gradient(to bottom, #5c1b33, #4e142a 50%, #3f0e20);
+}
+
+.notice-container {
+  display: grid;
+  grid-template-rows: 14vh 50vh 15vh;
+  grid-template-columns: 1fr;
+}

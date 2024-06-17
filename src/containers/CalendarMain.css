@@ -1,0 +1,43 @@
+.custom-calendar .react-calendar__tile {
+  @apply w-32 h-32; /* Adjust as needed */
+  display: grid;
+  grid-template-rows: auto 1fr;
+  align-items: start;
+}
+
+.custom-calendar .react-calendar__month-view__days__day:hover {
+  background-color: #5c1b33; /* Replace with your desired color */
+  color: white;
+}
+
+.custom-calendar .react-calendar__tile--active {
+  background-color: #fff; /* Replace with your desired color */
+}
+
+.custom-calendar .react-calendar__tile--active {
+  background-color: #132741; /* Replace with your desired color */
+}
+
+.custom-calendar .react-calendar__tile--active p.text-xs {
+  color: #fff; /* Replace with your desired color */
+}
+
+.custom-calendar .react-calendar__tile:hover p.text-xs {
+  color: #fff; /* Replace with your desired color */
+}
+
+/* Cambiar el color del día actual */
+.custom-calendar .react-calendar__tile--now {
+  background-color: greenyellow; /* Replace with your desired color */
+}
+
+.custom-calendar .react-calendar__tile--active p.text-xs {
+  color: #fff; /* Replace with your desired color */
+}
+.custom-calendar .react-calendar__tile--active {
+  background-color: #5c1b33; /* Replace with your desired color */
+}
+
+.custom-calendar .react-calendar__tile--active:not() {
+  background-color: #5c1b33; /* Replace with your desired color */
+}

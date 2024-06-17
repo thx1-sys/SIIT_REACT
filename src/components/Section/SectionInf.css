@@ -1,0 +1,69 @@
+.container-section--main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-total {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide-enter {
+  transform: translateX(var(--tx, -100%));
+}
+
+.slide-enter-active {
+  transform: translateX(var(--tx, 0));
+  transition: transform 300ms;
+}
+
+.fade-enter,
+.fade-right-enter {
+  opacity: 0;
+  transform: translateX(var(--tx, -100%));
+}
+
+.fade-right-enter {
+  transform: translateX(var(--tx, 100%));
+}
+
+.fade-enter-active,
+.fade-right-enter-active {
+  opacity: 1;
+  transform: translateX(var(--tx, 0));
+  transition: opacity 500ms, transform 500ms;
+}
+
+.fade-exit,
+.fade-right-exit {
+  opacity: 1;
+  transform: translateX(var(--tx, 0));
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transform: translateX(var(--tx, -100%));
+  transition: opacity 500ms, transform 500ms;
+}
+
+.fade-right-exit-active {
+  opacity: 0;
+  transform: translateX(var(--tx, 100%));
+  transition: opacity 500ms, transform 500ms;
+}
+
+.hover-effect {
+  --scale: 1;
+  --rotate: 0;
+  transition: transform 0.5s;
+  transform: scale(var(--scale)) rotate(var(--rotate)) translateX(var(--tx));
+}
+
+.hover-effect:hover {
+  --scale: 1.1;
+  --rotate: 12deg;
+}

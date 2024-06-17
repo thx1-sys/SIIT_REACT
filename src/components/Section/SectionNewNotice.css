@@ -1,0 +1,15 @@
+.toast-success,
+.toast-danger,
+.toast-warning {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  transition: opacity 0.5s, transform 0.5s;
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+.toast-show {
+  transform: translateX(0);
+  opacity: 1;
+}

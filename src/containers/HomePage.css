@@ -1,0 +1,10 @@
+.container-main-home {
+  width: 90%;
+  height: 75vh;
+  margin: 0 auto;
+  padding-top: 8px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
